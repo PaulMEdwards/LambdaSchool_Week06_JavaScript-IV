@@ -263,7 +263,10 @@ for (let w = 0; w < weeks.length; w++) {
   if(i == -1 || x > 0) {
     if (x > 0) {
       let j = random(0,6);
-      if (j == 0) break;
+      if (j == 0) {
+        console.log(`${paulMEdwards.name} found a job with the skills learned through Lambda!`);
+        break;
+      }
     } else {
       continue;
     }
