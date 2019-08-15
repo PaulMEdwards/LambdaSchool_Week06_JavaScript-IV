@@ -97,7 +97,7 @@ const paceEllsworth = new Instructor({
 const johnORourke = new TeamLead({
   name: `John O'Rourke`,
   age: 35,
-  location: `Eugene, Oregon`,
+  location: `Knoxville, Tennessee`,
   gradClassName: `Web15`,
   favInstructor: `Brendan Eich`,
   specialty: `HTML5 & CSS3`,
