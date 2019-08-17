@@ -61,7 +61,9 @@ class Student extends Person {
     this.favSubjects = attributes.favSubjects;
     this.grade = 0 | attributes.grade;
   }
-  listSubjects() {
+  listsSubjects() {
+    console.log(`Favorite Subjects:`);
+    this.favSubjects.forEach(s => console.log(s));
   }
   PRAssignment(subject) {
     console.log(`${this.name} has submitted a PR for ${subject}.`);
@@ -163,6 +165,7 @@ console.log("\n");  //Double blank line
 console.log(`Student:`);
 console.log(`--------`);
 paulMEdwards.speak(`\nI'm part of the ${paulMEdwards.className} cohort.\nMy background is ${paulMEdwards.previousBackground}.`);
+paulMEdwards.listsSubjects();
 
 console.log(`\n================\n`);
 
