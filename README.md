@@ -6,18 +6,18 @@ This challenge focuses on classes in JavaScript using the new `class` keyword.
 
 **Follow these steps to set up and work on your project:**
 
-* [ ] Create a forked copy of this project.
-* [ ] Add your project manager as collaborator on Github.
-* [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-* [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-* [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-* [ ] Push commits: git push origin `<firstName-lastName>`.
+* [x] Create a forked copy of this project.
+* [x] Add your team lead as collaborator on Github.
+* [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+* [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+* [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+* [x] Push commits: git push origin `<firstName-lastName>`.
 
 **Follow these steps for completing your project.**
 
-* [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-* [ ] Add your project manager as a reviewer on the pull-request
-* [ ] Your project manager will count the project as complete by merging the branch back into master.
+* [x] Submit a Pull-Request to merge `<firstName-lastName>` Branch into master (student's  Repo). **Please don't merge your own pull request**
+* [x] Add your team lead as a reviewer on the pull-request
+* [ ] Your team lead will count the project as complete by merging the branch back into master.
 
 ## Assignment Description
 
@@ -53,7 +53,7 @@ const fred = new Person({
 * Lambda personnel can be broken down into three different types of `people`.
   * **Instructors** - extensions of Person
   * **Students** - extensions of Person
-  * **Project Managers** - extensions of Instructors
+  * **team leads** - extensions of Instructors
 * **IMPORTANT** - You'll need to create 2 - 3 objects for each class and test them according to their unique Attributes. For example:
 
 ```js
@@ -99,21 +99,25 @@ const fred = new Instructor({
   * `PRAssignment` a method that receives a subject as an argument and logs out that the `student.name has submitted a PR for {subject}`
   * `sprintChallenge` similar to PRAssignment but logs out `student.name has begun sprint challenge on {subject}`
 
-#### Project Manager
+#### team lead
 
-* Now that we have instructors and students, we'd be nowhere without our PM's
+* Now that we have instructors and students, we'd be nowhere without our TL's
 * ProjectManagers are extensions of Instructors
 * ProjectManagers have the following unique props:
   * `gradClassName`: i.e. CS1
   * `favInstructor`: i.e. Sean
 * ProjectManagers have the following Methods:
-  * `standUp` a method that takes in a slack channel and logs `{name} announces to {channel}, @channel standy times!​​​​​
+  * `standUp` a method that takes in a slack channel and logs `{name} announces to {channel}, @channel standy times!​​​​​`
   * `debugsCode` a method that takes in a student object and a subject and logs out `{name} debugs {student.name}'s code on {subject}`
 
 #### Stretch Problem
 
 * Extend the functionality of the Student by adding a prop called grade and setting it equal to a number between 1-100.
-* Now that our students have a grade build out a method on the Instructor (this will be used by _BOTH_ instructors and PM's) that will randomly add or subtract points to a student's grade. _Math.random_ will help.
+* Now that our students have a grade build out a method on the Instructor (this will be used by _BOTH_ instructors and TL's) that will randomly add or subtract points to a student's grade. _Math.random_ will help.
 * Add a graduate method to a student.
   * This method, when called, will check the grade of the student and see if they're ready to graduate from Lambda School
   * If the student's grade is above a 70% let them graduate! Otherwise go back to grading their assignments to increase their score.
+
+## Live Site
+
+https://paulmedwards.github.io/LambdaSchool_Week06_JavaScript-IV/assignments/
